@@ -3,11 +3,20 @@ import { Container ,Card,CardBody,Button,Row,Col} from 'reactstrap';
 import {FaYoutube} from "react-icons/fa"
 import './App.css';
 import Layout from "./components/Layout/layout";
+import SEO from './components/seo';
 
 
 function App() {
  
   return (
+    <div>
+    <SEO
+    title="BSG | Backstreet gamer from Tirupati"
+    description="All about Gamer from Tirupati with regular live gaming feed and every entertaining feed is seen here
+    just subscribe and watch the show"
+    keywords="Gamer from Tirupati , Tirupati , COnsole Gamer , BSG-Backstreet gamer"
+    canurl="https://bsgamer.in"
+    />
     <div className="App">
     <Container>
     <hr/>
@@ -45,6 +54,7 @@ function App() {
     <h1>Give away details</h1>
     </Layout>
     </Container>
+    </div>
     </div>
   );
 }

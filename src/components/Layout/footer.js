@@ -10,6 +10,7 @@ const Footer =()=>{
                 <CardBody>
                     <Row>
                         <Col>
+                        <h4 className="titletext">Developed by</h4>
                         <img src={SVSK}
                         alt="SVSKHD | Our Tech Channel"
                         height="150"
