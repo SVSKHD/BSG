@@ -14,9 +14,23 @@ const Header = () =>{
           width="150"
           />
           <br/>
+          {/* socialhandle */}
            <ButtonGroup>
-              <Button outline color="dark"><FaFacebookF size={25}/></Button>
-              <Button outline color="dark"><FaInstagram size={25}/></Button>
+              
+              <Button 
+              target="_blank" 
+              href="https://www.facebook.com/stkjack/" 
+              outline color="dark">
+                  <FaFacebookF size={25}/>
+              </Button>
+
+              <Button 
+              target="_blank"
+              href="https://www.instagram.com/backstreet.gamer/"
+              outline color="dark">
+                  <FaInstagram size={25}/>
+              </Button>
+
           </ButtonGroup>
           </Col>
           <Col>

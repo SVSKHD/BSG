@@ -5,6 +5,27 @@ const SEO = ({title , description , keywords , ogimg ,canurl , ogurl }) =>{
     return(
         <div>
             <Helmet>
+            {/* Schema */}
+            <script type="application/ld+json">
+                {`
+                "@context": "https://schema.org/",
+                "@type": "Person",
+                "name": "backstreet Gamer",
+                "url": "https://www.bsgamer.in/",
+                "image": "",
+                "sameAs": [
+                    "https://www.facebook.com/stkjack",
+                    "https://www.instagram.com/backstreet.gamer/",
+                    "https://www.youtube.com/channel/UCX5vWdVLbYYrhwMqH-fHP4g"
+                ],
+                "jobTitle": "Gamer",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "BSG"
+                }  
+                `}
+                </script>
+
                 {/* favicon */}
                 <link rel="shortcut icon" id="favicon" href= {BSG}/>
                 {/* title */}
