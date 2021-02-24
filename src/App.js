@@ -16,6 +16,7 @@ function App() {
     just subscribe and watch the show"
     keywords="Gamer from Tirupati , Tirupati , COnsole Gamer , BSG-Backstreet gamer"
     canurl="https://bsgamer.in"
+    ogimg="./BSG.jpg"
     />
     <div className="App">
     <Container>

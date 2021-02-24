@@ -1,6 +1,6 @@
 import React from "react"
 import {Helmet} from "react-helmet"
-const SEO = ({title , description , keywords , ogimg ,canurl , }) =>{
+const SEO = ({title , description , keywords , ogimg ,canurl , ogurl }) =>{
     return(
         <div>
             <Helmet>
@@ -22,9 +22,9 @@ const SEO = ({title , description , keywords , ogimg ,canurl , }) =>{
                 <meta property ="og:title" content = {title}/>
                 <meta property ="og:description" content = {description}/>
                 <meta property ="og:type" content = "website"/>
-                {/* <meta property ="og:url" content = {ogurl}/>
+                <meta property ="og:url" content = {canurl}/>
                 <meta property ="og:image" content = {ogimg}/>
-                <meta property ="og:image:secure_url" content ={ogurl} /> */}
+                <meta property ="og:image:secure_url" content ={canurl} />
                 <meta property = "og:site_name" content={`${title} | BSG - BackStreet Gamer`}/>
 
                 {/* twitter */}
