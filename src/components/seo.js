@@ -1,9 +1,13 @@
 import React from "react"
 import {Helmet} from "react-helmet"
+import BSG from "../BSG.jpg"
 const SEO = ({title , description , keywords , ogimg ,canurl , ogurl }) =>{
     return(
         <div>
             <Helmet>
+                {/* favicon */}
+                <link rel="shortcut icon" id="favicon" href= {BSG}/>
+                {/* title */}
                 <title>{title}</title>
                 <meta name="title" content={title}/>
                 <meta name ="description" content = {description}/>
