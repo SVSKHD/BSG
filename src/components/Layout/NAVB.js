@@ -24,6 +24,9 @@ const NAVB = (props) => {
             <NavItem>
               <NavLink href="/pcbuilds">PC-Builds</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/mygear">My-gear</NavLink>
+            </NavItem>
           </Nav>
         </Collapse>
       </Navbar>

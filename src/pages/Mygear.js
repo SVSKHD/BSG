@@ -7,11 +7,11 @@ import {
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 
-const PCbuid = () =>{
+const Mygear = () =>{
     return(
      <div>
         <SEO
-        title="BSG | Backstreet gamer from Tirupati | PC Gears"
+        title="BSG | Backstreet gamer from Tirupati | My Pc Gear"
         description="All about Gamer from Tirupati with regular live gaming feed and every entertaining feed is seen here
         just subscribe and watch the show"
         keywords="
@@ -22,27 +22,27 @@ const PCbuid = () =>{
         PC Gaming gear,
         Total gear unlock,
         "
-        canurl="https://bsgamer.in/pcbuilds"
+        canurl="https://bsgamer.in/Mygear"
         ogimg="../BSG.jpg"
         />
        <Container fluid>
        <br/>
-    
-       <Layout>
+        <div align="center">  
+        <Layout>
            <br/>
            <Card>
            <CardBody>
            <div align="center">
-           <h1 className="titletext">PC-Builds</h1>
+           <h1 className="titletext">My Gear</h1>
            <hr/>
            </div>
            </CardBody>
            </Card>
            <br/>
        </Layout>
-
+       </div>
        </Container>
      </div>
     )
 }
-export default PCbuid
+export default Mygear
