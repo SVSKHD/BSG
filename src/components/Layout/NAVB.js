@@ -8,6 +8,7 @@ import {
   NavItem,
   NavLink,
 } from 'reactstrap';
+import {FaGamepad} from "react-icons/fa"
 
 const NAVB = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const NAVB = (props) => {
     <div className="titletext">
       <Navbar className="rounded" color="light" light expand="md">
         <NavbarBrand className="titletext" href="/">BSG</NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle}><FaGamepad size={30} /></NavbarToggler>
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
