@@ -5,7 +5,7 @@ const Header = () =>{
     return(
         <div>
          <Card>
-         <CardBody>
+          <CardBody>
           <Row>
           <Col>
           <img src={BSG}

@@ -1,5 +1,5 @@
 import React from "react"
-import {Route , Switch , Link , BrowserRouter as Router} from "react-router-dom"
+import {Route , Switch , BrowserRouter as Router} from "react-router-dom"
 import App from "./App"
 import PCbuid from "./pages/pcbuild"
 import Notfound from "./pages/notfound"

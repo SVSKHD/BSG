@@ -34,7 +34,7 @@ function App() {
     <Button target="_blank" 
     href="https://www.youtube.com/channel/UCX5vWdVLbYYrhwMqH-fHP4g" 
     outline color="danger">
-      <FaYoutube size={50}/>
+    <FaYoutube size={50}/>
     </Button>
 
     </Col>
