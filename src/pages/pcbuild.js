@@ -27,7 +27,7 @@ const PCbuid = () =>{
         />
        <Container fluid>
        <br/>
-    
+       <div align="center">
        <Layout>
            <br/>
            <Card>
@@ -40,7 +40,7 @@ const PCbuid = () =>{
            </Card>
            <br/>
        </Layout>
-
+       </div>
        </Container>
      </div>
     )

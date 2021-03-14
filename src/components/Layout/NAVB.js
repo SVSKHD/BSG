@@ -6,9 +6,9 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
 } from 'reactstrap';
 import {FaGamepad} from "react-icons/fa"
+import {Link} from "react-router-dom"
 
 const NAVB = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,11 +23,13 @@ const NAVB = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="me-auto" navbar>
             <NavItem>
-              <NavLink href="/pcbuilds">PC-Builds</NavLink>
+              <Link className="text-dark" to="/pcbuilds">PC-Builds</Link>
             </NavItem>
+     
             <NavItem>
-              <NavLink href="/mygear">My-gear</NavLink>
+              <Link className="text-dark" to="/mygear">My-gear</Link>
             </NavItem>
+
           </Nav>
         </Collapse>
       </Navbar>
