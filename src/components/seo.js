@@ -1,6 +1,5 @@
 import React from "react"
 import {Helmet} from "react-helmet"
-import ReactGA from "react-ga"
 const SEO = ({title , description , keywords , ogimg ,canurl , ogurl }) =>{
    
     return(
