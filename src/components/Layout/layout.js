@@ -5,6 +5,7 @@ import NAVB from "./NAVB"
 const Layout = (props) =>{
     return(
      <div>
+         <br/>
          <NAVB/>
          <br/>
          <Header/>

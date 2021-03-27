@@ -1,12 +1,17 @@
 import React from "react"
 import {Helmet} from "react-helmet"
+
 const SEO = ({title , description , keywords , ogimg ,canurl , ogurl }) =>{
    
+//    const pageview = () =>{
+//    ReactGA.initialize("265709919")
+//    ReactGA.pageview(window.location.pathname + window.location.search)
+//    }
     return(
         <div>
             <Helmet>
+             {/* Google Analytics */}
              
-            
              {/* Schema */}
              <script type="application/ld+json">
                 {`
