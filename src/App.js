@@ -4,11 +4,10 @@ import {FaYoutube} from "react-icons/fa"
 import './App.css';
 import Layout from "./components/Layout/layout";
 import SEO from './components/seo';
-import { useState } from 'react';
+
 
 
 function App() {
-  const [counter , setCounter] = useState()
   return (
     <div>
     <SEO
@@ -40,7 +39,7 @@ function App() {
 
     </Col>
     <Col>
-    <h4 className="titletext">{counter}</h4>
+    <h4 className="titletext">Counter</h4>
     
 
     </Col>
