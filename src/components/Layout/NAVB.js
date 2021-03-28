@@ -57,20 +57,26 @@ const NAVB = (props) => {
           </Nav>
           ) : (
             <Nav className="ml-auto">
+            <div align="center">
             <ButtonGroup>
-              <Button outline color="light">
+              <Button color="success">
                 <Link to="/signin">
+                <div className="text-light">
                 Signin
+                </div>
                 </Link>
               </Button>
 
-              <Button color="light">
+              <Button color="warning">
                 <Link to="/signup">
+                <div className="text-dark">
                 Signup
+                </div>
                 </Link>
               </Button>
 
             </ButtonGroup>
+            </div>
           </Nav> 
           )
           }
