@@ -10,7 +10,7 @@ import {
   ButtonGroup
 } from 'reactstrap';
 import {FaGamepad} from "react-icons/fa"
-import {Link, NavLink} from "react-router-dom"
+import {Link} from "react-router-dom"
 import {UserContext} from "../../context/UserContext"
 
 const NAVB = (props) => {
