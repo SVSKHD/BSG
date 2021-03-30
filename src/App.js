@@ -41,10 +41,11 @@ function App() {
     <Col>
     <h4 className="titletext">Scan or Click on Qr code</h4>
     <div>
-    <a 
-    target="_blank" 
-    rel="noreferrer" 
-    href="https://www.youtube.com/channel/UCX5vWdVLbYYrhwMqH-fHP4g"/>
+    
+    <Button 
+    outline color="dark"
+    target="_blank"  
+    href="https://www.youtube.com/channel/UCX5vWdVLbYYrhwMqH-fHP4g">
 
     <img
     height="200"
@@ -53,6 +54,8 @@ function App() {
     alt="Backstreet gamer Qr code"
     className="img-thumbnail rounded"
     />
+
+    </Button>
     </div>
     <br/>
     <h6 className="titletext">Subscribe the channel</h6>
