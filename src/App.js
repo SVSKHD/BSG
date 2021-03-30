@@ -4,17 +4,17 @@ import {FaYoutube} from "react-icons/fa"
 import './App.css';
 import Layout from "./components/Layout/layout";
 import SEO from './components/seo';
-
+import BSGQR from "./BSGQR.png"
 
 
 function App() {
   return (
     <div>
     <SEO
-    title="BSG | Backstreet gamer from Tirupati"
-    description="All about Gamer from Tirupati with regular live gaming feed and every entertaining feed is seen here
+    title="BSG | Backstreet gamer Official from Tirupati"
+    description="All about Official Gamer from Tirupati with regular live gaming feed and every entertaining feed is seen here
     just subscribe and watch the show"
-    keywords="Gamer from Tirupati , Tirupati , COnsole Gamer , BSG-Backstreet gamer"
+    keywords="Official Tirupati Gamer , Gamer from Tirupati , Tirupati , COnsole Gamer , BSG-Backstreet gamer"
     canurl="https://bsgamer.in"
     ogimg="./BSG.jpg"
     />
@@ -39,8 +39,20 @@ function App() {
 
     </Col>
     <Col>
-    <h4 className="titletext">Counter</h4>
-    
+    <h4 className="titletext">Scan or Click on Qr code</h4>
+    <div>
+    <a target="_blank" rel="norefferer" href="https://www.youtube.com/channel/UCX5vWdVLbYYrhwMqH-fHP4g">
+    <img
+    height="200"
+    width="200"
+    src={BSGQR}
+    alt="Backstreet gamer Qr code"
+    className="img-thumbnail rounded"
+    />
+    </a>
+    </div>
+    <br/>
+    <h6 className="titletext">Subscribe the channel</h6>
 
     </Col>
     </Row>
