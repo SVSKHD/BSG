@@ -1,7 +1,7 @@
 
 import { Container ,Card,CardBody,Button,Row,Col} from 'reactstrap';
 import {FaYoutube} from "react-icons/fa"
-import './App.css';
+import "./App.css"
 import Layout from "./components/Layout/layout";
 import SEO from './components/seo';
 import BSGQR from "./BSGQR.png"
