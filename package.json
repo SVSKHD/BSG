@@ -15,6 +15,7 @@
     "react-icons": "^4.2.0",
     "react-instagram-embed": "^2.0.0",
     "react-router-dom": "^5.2.0",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "4.0.3",
     "react-toastify": "^7.0.3",
     "reactstrap": "^8.9.0",
@@ -24,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sitemap": "node /src/sitemap.js",
+    "predeploy": "npm run sitemap"
   },
   "eslintConfig": {
     "extends": [
@@ -43,5 +46,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0"
   }
 }
