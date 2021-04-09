@@ -7,6 +7,7 @@ import SEO from './components/seo';
 import BSGQR from "./BSGQR.png"
 
 
+
 function App() {
   return (
     <div>
@@ -25,6 +26,14 @@ function App() {
     <Container fluid={true}>
     <Layout>
     <br/>
+    
+    <Card>
+      <CardBody>
+        <h1 className="titletext">BSG | Backstreet Gamer Official</h1>
+      </CardBody>
+    </Card>
+    
+    <br/>
     <Container>
     <Card>
     <CardBody>
@@ -38,6 +47,8 @@ function App() {
     </Button>
 
     </Col>
+
+    
     <Col>
     <h4 className="titletext">Scan or Click on Qr code</h4>
     <div>
@@ -66,7 +77,7 @@ function App() {
     </Card>
     </Container>
     <hr/>
-    <h1>Give away details</h1>
+   
     </Layout>
     </Container>
     </div>

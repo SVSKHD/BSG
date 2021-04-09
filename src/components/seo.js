@@ -1,5 +1,7 @@
 import React from "react"
 import {Helmet} from "react-helmet"
+import Favicon from "react-favicon"
+import BSGQR from "../BSGQR.png"
 
 const SEO = ({title , description , keywords , ogimg ,canurl , ogurl }) =>{
    
@@ -10,6 +12,10 @@ const SEO = ({title , description , keywords , ogimg ,canurl , ogurl }) =>{
     return(
         <div>
             <Helmet>
+            {/* favicon */}
+            <Favicon url="./favicon.ico" />
+            
+
              {/* Google Analytics */}
              
              {/* Schema */}
