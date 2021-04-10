@@ -5,7 +5,7 @@ import SVSK from "../../SVSK.png"
 const Footer =()=>{
     return(
         <div>
-            <Container>
+            <Container fluid>
                 <Card>
                 <CardBody>
                     <Row>

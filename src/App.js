@@ -11,14 +11,23 @@ import BSGQR from "./BSGQR.png"
 function App() {
   return (
     <div>
+    
     <SEO
-    title="BSG | Backstreet gamer Official from Tirupati"
+    title="BSG | BackStreet gamer Official from Tirupati | BackStreetGamer Official"
     description="All about Official Gamer from Tirupati with regular live gaming feed and every entertaining feed is seen here
     just subscribe and watch the show"
-    keywords="Official Tirupati Gamer , Gamer from Tirupati , Tirupati , COnsole Gamer , BSG-Backstreet gamer"
+    keywords="Official Tirupati Gamer , 
+              Gamer from Tirupati , 
+              Tirupati , 
+              Console Gamer , 
+              BSG-Backstreet gamer
+              BackStreetGamer Official,
+              BSG,
+              PC Gamer"
     canurl="https://bsgamer.in"
     ogimg="./BSG.jpg"
     />
+    
     <div className="App">
     <Container>
     <hr/>
