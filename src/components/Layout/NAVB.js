@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Collapse,
   Navbar,
@@ -6,8 +6,6 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  Button,
-  ButtonGroup
 } from 'reactstrap';
 import {FaGamepad} from "react-icons/fa"
 import {Link} from "react-router-dom"
