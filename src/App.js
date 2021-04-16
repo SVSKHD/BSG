@@ -38,7 +38,7 @@ function App() {
     
     <Card>
       <CardBody>
-        <h1 className="titletext">BSG | Backstreet Gamer Official</h1>
+        <h1 className="titletexti">BSG | Backstreet Gamer Official</h1>
       </CardBody>
     </Card>
     

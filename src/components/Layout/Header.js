@@ -1,9 +1,15 @@
-import {Card,CardBody,Row,Col,ButtonGroup,Button} from "reactstrap"
+import {useContext} from "react"
+import {Card,CardBody,Row,Col,ButtonGroup,Button, Container} from "reactstrap"
+import {Link} from "react-router-dom"
 import BSG from "../../BSG.jpg"
 import {FaFacebookF , FaInstagram , FaPlaystation , FaTv , FaXbox , FaVrCardboard} from "react-icons/fa"
+
+import {UserContext} from "../../context/UserContext"
+
 const Header = () =>{
+const context = useContext(UserContext)
     return(
-        <div>
+        <div className="header">
          <Card>
           <CardBody>
           <Row>
@@ -46,6 +52,52 @@ const Header = () =>{
          
           </Col>
           </Row>
+          <hr/>
+          <br/>
+          {/* user signup */}
+          {context.user ? (
+         
+            <ButtonGroup>
+              <Button outline color="dark">{context.user?.email ? context.user.email:""}</Button>
+              <Button onClick={()=>{
+                context.setUser(null)
+              }} outline color="danger">Signout</Button>
+            </ButtonGroup>
+         
+          ) : (
+          <div>
+              <Container>
+              <Card color="dark">
+              <CardBody>
+              <ButtonGroup>
+               
+               <Button 
+               color="light"
+               >
+                <Link to="/signup">
+                Signup
+                </Link>
+               </Button>
+               
+               <Button
+               color="light"
+               >
+               <Link to="/signin">
+               Signin
+               </Link>
+               </Button>
+              </ButtonGroup>
+              </CardBody>
+              </Card>
+              </Container>
+          </div>  
+         
+           
+        
+          )
+          }
+
+         <hr/>
          </CardBody>
         </Card>
         </div>
