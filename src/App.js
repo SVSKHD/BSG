@@ -62,7 +62,7 @@ function App() {
                <div className="coronatext">
                <h6>Present "Andhra-Pradesh" Corona Status</h6>
                 <br/>
-               <h6>Stay Safe 😷 and Start playing Games 🕹️ </h6>
+               <h6>Stay Home 🏠 and Start playing Games 🕹️ </h6>
                 <hr/>
                 <CardTitle>Active  : {details?.active}</CardTitle>
                 <CardTitle>Confirmed  : {details?.confirmed}</CardTitle>
