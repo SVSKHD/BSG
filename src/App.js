@@ -1,14 +1,27 @@
-
-import { Container ,Card,CardBody,Button,Row,Col} from 'reactstrap';
+import {useState , useEffect} from "react"
+import { Container ,Card,CardBody,Button,Row,Col,CardTitle} from 'reactstrap';
 import {FaYoutube} from "react-icons/fa"
 import "./App.css"
 import Layout from "./components/Layout/layout";
 import SEO from './components/seo';
 import BSGQR from "./BSGQR.png"
-
+import Axios from "axios"
 
 
 function App() {
+    const [details, setDetails] = useState();
+    const apiURL = "https://api.covid19india.org/data.json";
+    const fetchDetails = async () => {
+      const { data } = await Axios.get(apiURL);
+      const details = data.statewise[4];
+      setDetails(details)
+      console.log(details)
+    };
+  
+    
+    useEffect(() => {
+      fetchDetails();
+    }, []);
   return (
     <div>
     
@@ -38,7 +51,32 @@ function App() {
     
     <Card>
       <CardBody>
+        <Row>
+        <Col>
+        
+        </Col>
+        <Col xs="12" md="4" lg="4">
         <h1 className="titletexti">BSG | Backstreet Gamer Official</h1>
+        <Card color="danger">
+          <CardBody>
+               <div className="coronatext">
+               <h6>Present "Andhra-Pradesh" Corona Status</h6>
+                <br/>
+               <h6>Stay Safe 😷 and Start playing Games 🕹️ </h6>
+                <hr/>
+                <CardTitle>Active  : {details?.active}</CardTitle>
+                <CardTitle>Confirmed  : {details?.confirmed}</CardTitle>
+                <CardTitle>Confirmed  : {details?.confirmed}</CardTitle>
+                <CardTitle>Recovered  : {details?.recovered}</CardTitle>
+                <CardTitle>Death  : {details?.deaths}</CardTitle>
+               </div>
+          </CardBody>
+        </Card>
+        </Col>
+        <Col>
+        </Col>
+        </Row>
+     
       </CardBody>
     </Card>
     
